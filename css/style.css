@@ -1,0 +1,113 @@
+*{
+	margin:0px;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body a{
+		text-decoration:none;
+}
+
+li{
+	list-style-type:none;
+}
+body ul{
+	padding:0px;
+}
+
+.hhh:hover{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hov li:hover a{
+	color:orange!important;
+}
+.hov li a{
+	color:black!important;
+}
+.hov-others p:hover{
+   color:orange!important;
+}
+
+.hov-others img:hover{
+	transform: scale(1.15)!important;
+	transition:transform .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	/* width:70%!important; */
+	
+}
+
+.hov-img:hover img{
+	transform: scale(1.05);
+	transition:transform .5s cubic-bezier(0.22, 0.61, 0.36, 1)
+}
+
+.view-hover{
+		visibility:hidden!important;
+	}
+	
+	.hhh:hover .view-hover{
+		visibility:visible 	!important;
+		transition: all 0.3s ease;
+		transform: scale(1.0);
+	}
+	
+.main-d-none{
+	display:none!important;
+}
+
+.order{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	background-color: white;
+	border: 1px solid lightgray;
+	z-index: 1040;
+	width: 30%;
+	height: 100vh;
+}
+
+
+.allow{
+	animation: name .3s forwards linear;
+}
+
+@keyframes name{
+	0%{display: none;opacity: 0;right: -100px}
+	100%{display: block;opacity: 1;right: 0px}	
+}
+
+
+.disallow{
+	animation: name1 .3s forwards linear;
+}
+
+@keyframes name1{
+	0%{display: block;opacity: 1;right: 0px}
+	100%{display: none;opacity: 0;right: -100px}	
+}
+
+.li-padding li{
+	padding: 7px 0px;
+	font-size: 17px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.animation{
+	animation: name12 .8s forwards linear;
+}
+
+@keyframes name12{
+	0%
+	{
+		transform:translatey(-100px);
+		transition:all .8s ease-in-out;
+		opacity:0;
+	}
+	100%
+	{
+		transform:translatey(0px);
+		transition:all .8s ease-in-out;
+		opacity:1;
+	}
+}

@@ -1,0 +1,32 @@
+@media(max-width:576px){
+.res-d-none{
+	display:none!important;
+}
+.main-d-none{
+	display:block!important;
+}
+.res-text{
+	font-size:10px;
+	padding-left:8px;
+	padding-right:5px;
+}
+.order{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	background-color: white;
+	border: 1px solid lightgray;
+	z-index: 1040;
+	width: 100%;
+	height: 100vh;
+}
+}
+@media(min-width:768px) and (max-width:991px){
+.nav-bar ul li{
+	padding-left:15px;
+}
+.hov-img img{
+	width:100%!important;
+}
+
+}
