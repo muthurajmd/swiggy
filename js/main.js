@@ -11,7 +11,7 @@ var hotel=[{
 			icon:"bi bi-star-fill px-2",
 			rating:"4.3",
 			time:"31",
-			amt:"560",
+			amt:"80",
 			view:"QUICK VIEW"
 			
 			
@@ -24,7 +24,7 @@ var hotel=[{
 			icon:"bi bi-star-fill px-2",
 			rating:"4.0",
 			time:"34",
-			amt:"650",
+			amt:"150",
 			view:"QUICK VIEW"
 			},
 			{ 
@@ -35,7 +35,7 @@ var hotel=[{
 			icon:"bi bi-star-fill px-2",
 			rating:"3.5",
 			time:"31",
-			amt:"700",
+			amt:"200",
 			view:"QUICK VIEW",
 			},
 			{ 
@@ -57,7 +57,7 @@ var hotel=[{
 			icon:"bi bi-star-fill px-2",
 			rating:"3.6",
 			time:"26",
-			amt:"250",
+			amt:"180",
 			view:"QUICK VIEW",
 			},
 			{ 
@@ -79,7 +79,7 @@ var hotel=[{
 			icon:"bi bi-star-fill px-2",
 			rating:"4.0",
 			time:"51",
-			amt:"250",
+			amt:"120",
 			view:"QUICK VIEW",
 			},
 			{ 
@@ -90,7 +90,7 @@ var hotel=[{
 			icon:"bi bi-star-fill px-2",
 			rating:"3.5",
 			time:"42",
-			amt:"400",
+			amt:"140",
 			view:"QUICK VIEW",
 			},
 			]
@@ -153,7 +153,7 @@ anger3.innerHTML=e.amt +" For Two"
 anger3.setAttribute("style","font-size:14px")
 
 var lastdiv= document.createElement("div")
-lastdiv.setAttribute("class","text-center border-top view-hover")
+lastdiv.setAttribute("class","text-center view-hover")
 
 var adddiv = document.createElement("div")
 adddiv.setAttribute("class","text-center")
@@ -161,13 +161,13 @@ adddiv.setAttribute("class","text-center")
 var addcard = document.createElement("button")
 addcard.innerHTML="ADD TO CART"
 addcard.setAttribute("onclick",`card(${e.id})`)
-addcard.setAttribute("class","border-0 mt-4")
-addcard.setAttribute("style","color:white;background-color:#17e11c;padding:0px 5px;")
+addcard.setAttribute("class","border-0 mt-4 mb-2")
+addcard.setAttribute("style","color:white;background-color:#1050e8ad;padding:0px 5px;")
 
-var quick= document.createElement("span")
-quick.innerHTML=e.view
-quick.setAttribute("class","fw-bold")
-quick.setAttribute("style","font-size:12px; padding-bottom:10px; display:inline-block; color:blue;")
+// var quick= document.createElement("span")
+// quick.innerHTML=e.view
+// quick.setAttribute("class","fw-bold")
+// quick.setAttribute("style","font-size:12px; padding-bottom:10px; display:inline-block; color:blue;")
 
 if(e.rating>=4){
 	anger1.setAttribute("style","background-color:green")
@@ -187,7 +187,7 @@ imagediv.append(iconDiv)
 iconDiv.append(hotelname,varient,social,adddiv)
 social.append(stardiv,anger2,anger3)
 stardiv.append(anger,anger1)
-lastdiv.append(quick)
+// lastdiv.append(quick)
 // social.append(adddiv)
 adddiv.append(addcard)
 })
